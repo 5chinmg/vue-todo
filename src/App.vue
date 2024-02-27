@@ -43,6 +43,14 @@ function deletItem(id) {
   // splice(시작위치, 삭제갯수)
   data.items.splice(idx, 1);
 }
+function test() {
+  console.log('11');
+}
+test2();
+function test2() {
+  console.log('22');
+}
+test2();
 </script>
 
 <template>
@@ -50,7 +58,7 @@ function deletItem(id) {
     <h1>Simple to-do list</h1>
     <!-- 자바스크립트 사용시 {{  }} 사용 -->
     <div class="todo_count">
-      완료: {{ isComplete }} / 할 일: {{ totalItems }}
+      완료된 할일: {{ isComplete }} / 할 일: {{ totalItems }}
     </div>
     <div class="todo_add">
       <!-- v-on: 이벤트명 이벤트 연결 디렉티브 -->
